@@ -1,0 +1,193 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@300;500;700&display=swap');
+
+/* Reset Margin dan Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container untuk Header, Main, Footer */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Section */
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #0EDDDB, #10B7B5);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between; /* Membagi header antara kiri dan kanan */
+    align-items: center; /* Agar teks berada di tengah secara vertikal */
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; /* Bisa disesuaikan sesuai selera */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 20px; /* Memberi jarak dari tepi kiri */
+}
+
+/* Navigation Styling */
+header nav {
+    margin-right: 20px; /* Memberi jarak dari tepi kanan */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #F9C039;
+}
+
+
+/* Main Content */
+main {
+    padding: 50px 0;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #10B7B5;
+}
+
+/* Category Grid */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk 2 baris */
+    gap: 30px; /* Jarak antar kategori */
+}
+
+.category {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px; /* Padding lebih besar untuk ruang yang lebih luas */
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    aspect-ratio: 1 / 1; /* Menetapkan rasio aspek 1:1 */
+    position: relative; /* Untuk memastikan padding tidak mempengaruhi ukuran */
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+.category-img {
+    width: 70%; 
+    height: auto; 
+    max-height: 70%; 
+    object-fit: contain; 
+    margin-bottom: 15px;
+}
+
+.category h3 {
+    font-size: 1.2rem; 
+}
+
+footer {
+    background: #333;
+    color: #f4f4f9;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-logo {
+    width: 70px;
+}
+
+.footer-center {
+    text-align: left;
+}
+
+.footer-center h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-center p {
+    font-size: 1rem;
+    color: #f4f4f9;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-right p {
+    font-size: 1rem;
+    color: #f4f4f9;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0;
+}
+
+.social-media li a {
+    text-decoration: none;
+    color: #f4f4f9;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.social-media li a:hover {
+    color: #F9C039;
+}
